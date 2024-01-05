@@ -76,6 +76,14 @@ body{
 #menuImg{
     display: none;
 }
+#center-tit{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    top: 100px;
+}
 @media (max-width: 767px) {
     .item{
         width: 300px;
@@ -148,5 +156,13 @@ body{
     }
     #main{
         display: none;
+    }
+    #center-tit{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        top: 100px;
     }
 }
