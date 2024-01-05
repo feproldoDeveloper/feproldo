@@ -70,22 +70,6 @@ body{
     font-size: 15px;
     margin-left: 55px;
 }
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Portrait tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .item{
         width: 300px;
@@ -116,43 +100,7 @@ body{
         z-index: 5;
         display: flexbox;
         margin-top: -5px;
-        font-size: 12px;
-        margin-left: 65px;
-    }
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-    .item{
-        width: 300px;
-        height: 90px;
-        border: 3px solid rgb(203, 147, 255);
-        border-radius: 15px;
-        background-color: rgba(203, 147, 255, 0.145);
-        text-align: center;
-    
-        box-sizing: border-box;
-        margin-bottom: 10px;
-    }
-    .itemImg{
-        height: 80px;
-        position:static;
-        display: flex;
-        left: 0;
-        border-radius: 100%;
-    }
-    .itemtext{
-        z-index: 5;
-        display: flexbox;
-        margin-top: -70px;
-        margin-left: 35px;
-        font-size: 25px;
-    }
-    .itemdesc{
-        z-index: 5;
-        display: flexbox;
-        margin-top: -5px;
-        font-size: 12px;
-        margin-left: 65px;
+        font-size: 10px;
+        margin-left: 50px;
     }
 }
