@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+body {
+    zoom: 1.5;
+    background-color: #303237;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: #232428;
+    border-radius: 7px;
+}
+#card #head{
+    width: 100%;
+    height: 50px;
+}
+#card #head img{
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+#card #badger{
+    background-color: #111214;
+    width: 55px;
+    height: 20px;
+    position: absolute;
+    right: 12.5px;
+    border-radius: 5px;
+    top: 85px;
+}
+#card #body{
+    background-color: #111214;
+    height: 450px;
+    width: 275px;
+    position: relative;
+    top: 75px;
+    border-radius: 10px;
+}
+#card #centr{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#card #centr #nickname{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#card #centr #tag{
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 13px;
+}
+#card hr{
+    border: 1px solid #303237;
+    box-shadow: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#card #centr #about{
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+#card #centr #about-desc{
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+#card #centr #settings{
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 900;
+}
+#card #centr #activDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#card #centr #activDiv .activ{
+    width: 250px;
+    height: 75px;
+}
+#card #centr #activDiv .activ .name{
+    display: block;
+    position: relative;
+    top: -60px;
+    left: 90px;
+    font-size: 13px;
+}
+#card #centr #activDiv .activ .desc{
+    display: block;
+    position: relative;
+    top: -60px; 
+    left: 90px;
+    font-size: 11px;
+    font-weight: 500;
+}
+#card #centr #activDiv img{
+    width: 75px;
+    height: 75px;
+    z-index: 4;
+    border-radius: 10px;
+}
+#card #centr #activDiv .buttonActiv{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    margin-bottom: 25px;
+}
+#card #centr #activDiv .buttonActiv button{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #4E5058;
+    font-weight: 500;
+    transition: .3s;
+    z-index: 99;
+}
+#card #centr #activDiv .buttonActiv button:active{
+    background-color: #484a51;
+}
+#card #centr #activDiv .buttonActiv button:hover{
+    background-color: #41444a;
+    transition: .3s;
+}
+#card #badger a img{
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    vertical-align: middle;
+}

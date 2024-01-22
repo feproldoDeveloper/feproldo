@@ -1,0 +1,15 @@
+@media (max-width: 1000px){
+    body{
+        zoom: 1.5;
+    }
+}
+@media (max-width: 768px){
+    body{
+        zoom: 0.95;
+    }
+}
+@media (max-width: 435px){
+    body{
+        zoom: 0.85;
+    }
+}
