@@ -16,7 +16,7 @@ body {
 #card {
     position: relative;
     width: 300px;
-    height: 600px;
+    height: 700px;
     background-color: #232428;
     border-radius: 7px;
 }
@@ -43,7 +43,7 @@ body {
 }
 #card #body{
     background-color: #111214;
-    height: 450px;
+    height: 550px;
     width: 275px;
     position: relative;
     top: 75px;
