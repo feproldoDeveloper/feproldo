@@ -3,13 +3,18 @@
         zoom: 1.2;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 530px){
     body{
-        zoom: 0.85;
+        zoom: 1;
     }
 }
-@media (max-width: 435px){
+@media (max-width: 430px){
     body{
-        zoom: 0.75;
+        zoom: 0.8;
+    }
+}
+@media (max-width: 350px){
+    body{
+        zoom: 0.6;
     }
 }
