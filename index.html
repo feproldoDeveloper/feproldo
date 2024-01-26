@@ -17,14 +17,21 @@
     <link rel="icon" href="/ava.gif"/>
 </head>
 <body>
+    <div id="title">
+        <div id="title-img">
+            <img id="title-img-img" src="./js.jpg" alt="">
+        </div>
+            <p id="title-titl">JavaScript</p>
+            <p id="title-desc">Создаю ботов</p>
+        </div>
     <div id="card">
         <div id="head">
             <img src="ava.gif" alt="psina">
         </div>
         <div id="badger">
-            <a title="javaScript" href=""><img src="js.jpg" alt="javaScript"></a>
-            <a title="c#" href=""><img src="csharp.png" alt="C#"></a>
-            <a title="Unity" href=""><img src="unity.png" alt="Unity"></a>
+            <a onclick="js()" class="badgers"><img src="js.jpg" alt="javaScript"></a>
+            <a onclick="csharp()" class="badgers"><img src="csharp.png" alt="C#"></a>
+            <a onclick="unity()" class="badgers"><img src="unity.png" alt="Unity"></a>
         </div>
         <div id="centr">
             <div id="body">
@@ -59,5 +66,6 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
