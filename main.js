@@ -12,7 +12,7 @@ function js(){
     desc.innerText = "Создаю ботов."
     parent.style.display = "block"
     parent.style.animation = "titleAnimOpen 1s forwards"
-    setTimeout(offAnim, 3000)
+    setTimeout(offAnim, 2500)
 }
 function csharp(){
     if(isAnim) return
@@ -22,7 +22,7 @@ function csharp(){
     desc.innerText = "Работаю с Unity."
     parent.style.display = "block"
     parent.style.animation = "titleAnimOpen 1s forwards"
-    setTimeout(offAnim, 3000)
+    setTimeout(offAnim, 2500)
 }
 function unity(){
     console.log("1")
@@ -33,7 +33,7 @@ function unity(){
     desc.innerText = "Создаю игры."
     parent.style.display = "block"
     parent.style.animation = "titleAnimOpen 1s forwards"
-    setTimeout(offAnim, 3000)
+    setTimeout(offAnim, 2500)
 }
 function offAnim(){
     parent.style.animation = "titleAnimClose 1s forwards"
