@@ -7,8 +7,8 @@ parent.style.display = "none"
 function js(){
     if(isAnim) return
     isAnim = true;
-    img.src = "js.jpg"
-    title.innerText = "JavaScript"
+    img.src = "nodejs.png"
+    title.innerText = "NodeJs"
     desc.innerText = "Создаю ботов."
     parent.style.display = "block"
     parent.style.animation = "titleAnimOpen 1s forwards"
