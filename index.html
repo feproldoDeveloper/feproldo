@@ -1,71 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FCCA00">
-    <meta name="twitter:title" content="feproldo">
-    <meta name="twitter:description" content="Мой сайт пон">
-    <meta name="twitter:url" content="https://feproldo.ru">
-    <meta name="og:type" content="website"/>
-    <meta name="og:title" content="feproldo">
-    <meta name="og:description" content="мой сайт пон">
-    <meta name="og:url" content="https://feproldo/distortion">
-    <title>feproldo</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./adaptsize.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="adapt.css">
     <link rel="icon" href="/ava.gif"/>
+    <title>Feproldo</title>
 </head>
 <body>
-    <div id="title">
-        <div id="title-img">
-            <img id="title-img-img" src="./js.jpg" alt="">
+    <header>
+        <button onclick="swap()">
+            <i class="bx bx-sun" id="daynight"></i>
+        </button>
+    </header>
+    <div id="likeHeader"></div>
+    <div class="div">
+        <div class="content">
+            <img src="ava.gif" alt="avatar" id="ava">
         </div>
-            <p id="title-titl">JavaScript</p>
-            <p id="title-desc">Создаю ботов</p>
-        </div>
-    <div id="card">
-        <div id="head">
-            <img src="ava.gif" alt="psina">
-        </div>
-        <div id="badger">
-            <a onclick="js()" class="badgers"><img src="nodejs.png" alt="Nodejs"></a>
-            <a onclick="csharp()" class="badgers"><img src="csharp.png" alt="C#"></a>
-            <a onclick="unity()" class="badgers"><img src="unity.png" alt="Unity"></a>
-        </div>
-        <div id="centr">
-            <div id="body">
-                <p id="nickname">feproldo</p>
-                <p id="tag"><a href="https://t.me/feproldo" target="_blank">@feproldo</a></p>
-                <hr>
-                <p id="about">Обо мне</p>
-                <p id="about-desc">Создаю Discord ботов уже больше 3 лет<br>точно. <br>Создаю игры на Unity.<br> Могу создать бота для Telegram / Discord на заказ.<br><br>Везде можете меня найти по нику <b><a href="https://t.me/feproldo" target="_blank">@feproldo</a></b></p>
-                <p id="settings">Ссылки</p>
-                <div id="activDiv">
-                    <div class="activnost">
-                        <div class="activ">
-                                <a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=1192392806992445470&permissions=8&scope=bot"><img src="dist.jpg" alt="distortion"></a>
-                                <a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=1192392806992445470&permissions=8&scope=bot" class="name">🟡 Distortion</a>
-                                <a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=1192392806992445470&permissions=8&scope=bot" class="desc">Новая эра в общении.</a>
-                        </div>
-                        <div class="buttonActiv">
-                            <button onclick="window.open('https:\/\/discord.com\/api\/oauth2\/authorize?client_id=1192392806992445470&permissions=8&scope=bot', '_blank')">Добавить бота</button>
-                        </div>
-                    </div>
-                    <div class="activnost">
-                        <div class="activ">
-                                <a target="_blank" href="https://t.me/feproldo"><img src="tg.png" alt="Telega"></a>
-                                <a target="_blank" href="https://t.me/feproldo" class="name">Заказать бота</a>
-                                <a target="_blank" href="https://t.me/feproldo" class="desc">Делаю ботов на заказ для<br>Telegram и Discord</a>
-                        </div>
-                        <div class="buttonActiv">
-                            <button onclick="window.open('https:\/\/t.me\/feproldo', '_blank')">Заказать!</button>
-                        </div>
-                    </div>
-                </div>
+        <div class="content">
+            <h1>Привет, я<br>feproldo.</h1><br>
+            <p>Занимаюсь</p>
+            <div class="changeDiv"><p id="changeWords"></p></div>
+            <div id="buttons">
+                <button class="small" onclick="link('https:\/\/discordapp.com/users/955851148433178674/')"><i class="bx bxl-discord-alt"></i></button>
+                <button class="small" onclick="link('https:\/\/t.me/feproldo')"><i class="bx bxl-telegram"></i></button>
+                <button class="small" onclick="link('https:\/\/vk.com/feproldo')"><i class="bx bxl-vk"></i></button>
             </div>
+            
+        </div>
+    </div>
+    <span class="btw">
+        <h1>Проекты, в которых я учавствую:</h1>
+    </span>
+    <div class="div">
+        <div class="content">
+            <img src="dist.png" alt="Distortion" id="ava">
+        </div>
+        <div class="content">
+            <h1 class="dist">Distortion</h1><br>
+            <p class="dist">Многофункциональный бот Discord</p>
+            <button onclick="link('https:\/\/distbot.ru/')" id="distBut">Подробнее...</button>
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="textchange.js"></script>
 </body>
 </html>
+<!--/old bruh-->

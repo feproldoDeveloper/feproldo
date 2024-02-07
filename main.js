@@ -1,46 +1,47 @@
-const parent = document.querySelector('#title');
-const title = parent.querySelector("#title-titl")
-const desc = parent.querySelector("#title-desc")
-const img = document.getElementById("title-img-img")
-var isAnim = false;
-parent.style.display = "none"
-function js(){
-    if(isAnim) return
-    isAnim = true;
-    img.src = "nodejs.png"
-    title.innerText = "NodeJs"
-    desc.innerText = "Создаю ботов."
-    parent.style.display = "block"
-    parent.style.animation = "titleAnimOpen 1s forwards"
-    setTimeout(offAnim, 2500)
+var isDay = true
+start();
+function swap(){
+    isDay = !isDay;
+    daynight();
 }
-function csharp(){
-    if(isAnim) return
-    isAnim = true;
-    img.src = "csharp.png"
-    title.innerText = "C#"
-    desc.innerText = "Работаю с Unity."
-    parent.style.display = "block"
-    parent.style.animation = "titleAnimOpen 1s forwards"
-    setTimeout(offAnim, 2500)
+function daynight(){
+    if(!isDay){
+        document.documentElement.style.setProperty('--background-color', 'rgb(20, 0, 60)');
+        document.documentElement.style.setProperty('--header-color', 'rgb(35, 0, 115)');
+        document.documentElement.style.setProperty('--header-shadow', 'rgb(45, 0, 135)');
+        document.documentElement.style.setProperty('--header-i', 'white');
+        document.documentElement.style.setProperty('--text-color', 'rgb(160, 115, 255)');
+        document.documentElement.style.setProperty('--button-color', 'rgb(55, 10, 150)');
+        document.documentElement.style.setProperty('--button-pressed-color', 'rgb(81, 22, 209)');
+        document.getElementById('daynight').classList.add("bx-moon")
+        document.getElementById('daynight').classList.remove("bx-sun")
+        save('night');
+    }
+    else{
+        document.documentElement.style.setProperty('--background-color', 'rgb(160, 115, 255)');
+        document.documentElement.style.setProperty('--header-color', 'rgb(141, 102, 226)');
+        document.documentElement.style.setProperty('--header-shadow', 'rgb(130, 94, 209)');
+        document.documentElement.style.setProperty('--header-i', 'rgb(255, 255, 0)');
+        document.documentElement.style.setProperty('--text-color', 'rgb(20, 0, 60)');
+        document.documentElement.style.setProperty('--button-color', 'rgb(138, 84, 255)');
+        document.documentElement.style.setProperty('--button-pressed-color', 'rgb(152, 104, 255)');
+        document.getElementById('daynight').classList.add("bx-sun")
+        document.getElementById('daynight').classList.remove("bx-moon")
+        save('day');
+    }
 }
-function unity(){
-    console.log("1")
-    if(isAnim) return
-    isAnim = true;
-    img.src = "unity.png"
-    title.innerText = "Unity"
-    desc.innerText = "Создаю игры."
-    parent.style.display = "block"
-    parent.style.animation = "titleAnimOpen 1s forwards"
-    setTimeout(offAnim, 2500)
+function link(link){
+    window.open(link, "_blank")
 }
-function offAnim(){
-    parent.style.animation = "titleAnimClose 1s forwards"
-    setTimeout(offAnim1, 1000)
+function start(){
+    if(localStorage.getItem("theme") == "day"){
+        isDay = true;
+    }
+    else{
+        isDay = false;
+    }
+    daynight()
 }
-function offAnim1(){
-    parent.style.display = "none"
-    parent.style.animation = ""
-    isAnim = false  
+function save(daynight){
+    localStorage.setItem("theme", daynight);
 }
