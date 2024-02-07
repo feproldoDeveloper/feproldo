@@ -36,6 +36,14 @@ h1{
 p {
     font-size: 2vw;
 }
+@keyframes hi {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 .btw {
     text-align: center;
 }
@@ -53,6 +61,7 @@ p {
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    animation: hi 3s forwards;
 }
 #ava {
     position: relative;
@@ -113,6 +122,7 @@ header {
     background-color: var(--header-color);
     z-index: 999;
     transition: .5s;
+    animation: hi 3s forwards;
 }
 header button{
     width: 5vh;
