@@ -126,3 +126,15 @@ header button{
 header button i {
     color: var(--header-i);
 }
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 3px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: var(--header-color)
+  }
